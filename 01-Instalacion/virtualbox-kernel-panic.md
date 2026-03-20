@@ -26,8 +26,13 @@ VFS: unable to mount root fs on unknown-block(0,0)
 
 1. Cuando aparece el **error kernel panic**, presiona el botón de apagar y luego vuelve a presionarlo para encender.  
 2. Durante el arranque, entra al **menú avanzado (Advanced Options for Linux Mint)**.  
+![Grub Kernel](./images/grub-kernel.png)
+
 3. Selecciona el kernel **6.8.0-106-generic (LTS)** para iniciar el sistema.  
+![Grub Kernel Selection ](./images/grub-kernel-selection.png)
+
    - ⚠️ No iniciar con los kernels 6.14 o 6.17.  
+  
 4. Una vez iniciado con kernel estable, se pueden eliminar los kernels conflictivos (6.14 y 6.17).
 
 ## 4 Análisis del problema
@@ -41,7 +46,7 @@ Causas identificadas:
 
 ## 5 Solución aplicada
 
-## 5.1 Verificación de kernels
+### 5.1 Verificación de kernels
 
 Iniciar la terminal de Linux y digitar los siguientes comandos:
 
@@ -52,7 +57,7 @@ dpkg --list | egrep 'linux-image|linux-headers'   # Lista kernels y headers
  
 ```
 
-## 5.2 Eliminación de kernels problemáticos
+### 5.2 Eliminación de kernels problemáticos
 
 - Verificación de kernels
 - Eliminación de kernels conflictivos
@@ -74,7 +79,7 @@ linux-hwe-6.17-headers-6.17.0-14      # Eliminación completa de paquetes del ke
 
 ```
 
-## 5.3 Limpieza del sistema
+### 5.3 Limpieza del sistema
 
 ```.
 sudo apt autoremove                    # Elimina paquetes innecesarios
@@ -83,7 +88,7 @@ sudo apt autoclean                     # Limpia cache de paquetes
 
 ```
 
-## 5.4 Actualización del arranque
+### 5.4 Actualización del arranque
 
 ```.
 sudo update-grub                       # Actualiza menú de arranque
@@ -91,14 +96,14 @@ update-initramfs -u -k all             # Reconstruye initramfs
 
 ```
 
-## 5.5 Reinicio del sistema
+### 5.5 Reinicio del sistema
 
 ```.
 sudo reboot                            # Reinicia el sistema
 
 ```
 
-## 5.6 Instalación de VirtualBox
+### 5.6 Instalación de VirtualBox
 
 ```.
 sudo apt update                         # Actualiza lista de paquetes
@@ -111,7 +116,7 @@ sudo usermod -aG vboxusers $USER        # Agrega usuario al grupo VirtualBox
 
 ```
 
-## 5.7 Validación de instalación
+### 5.7 Validación de instalación
 
 ```.
 virtualbox --help                       # Verifica instalación
@@ -157,14 +162,31 @@ usuario@nombre_del_equipo:~$_
 
 ## 7 Validación de virtualización
 
+En esta sección verificamos que VirtualBox puede usar la virtualización por hardware correctamente.  
+
+Se incluye cómo desactivar temporalmente KVM en caso de conflicto con CPUs AMD.
+
+### 7.1 Verificar módulos de virtualización activos
+
 ```.
-lsmod | grep kvm                        # Verifica si KVM está activo
-lsmod | grep -E 'kvm|virt'             # Verifica módulos de virtualización
-ls -l /dev/kvm                          # Verifica acceso a virtualización
-sudo modprobe -r kvm_amd               # Desactiva KVM AMD
-sudo modprobe -r kvm                   # Desactiva KVM
+lsmod | grep -E 'kvm|virt'  # Muestra los módulos KVM cargados
 
 ```
+
+![Módulos KVM activos](./images/module-validation.png)
+
+*Salida de `lsmod | grep -E 'kvm|virt'` mostrando módulos KVM activos*
+
+7.2 Desactivar KVM temporalmente (si VirtualBox falla)
+
+sudo modprobe -r kvm_amd   # Desactiva KVM en CPUs AMD
+sudo modprobe -r kvm       # Desactiva módulo de virtualización KVM
+
+![KVM desactivado](./images/kvm-disabled.png)
+
+*Después de ejecutar `modprobe -r kvm_amd` y `modprobe -r kvm`, KVM queda desactivado temporalmente*
+
+⚠ Nota: Esto solo se hace si VirtualBox no inicia correctamente. Para volver a activar KVM, reinicia el sistema.
 
 ## 8 Evidencia
 
