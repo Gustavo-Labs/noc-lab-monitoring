@@ -37,7 +37,7 @@ Nota_gris: Imagen recreada con fines educativos basada en entorno real de labora
 
 ⚠ **Nota:** Imagen recreada con fines educativos basada en entorno real de laboratorio.
 
-   *Nota: Imagen recreada con fines educativos basada en entorno real de laboratorio.*
+*Nota: Imagen recreada con fines educativos basada en entorno real de laboratorio.*
 
    3.Selecciona el kernel **6.8.0-106-generic (LTS)** para iniciar el sistema.  
 
