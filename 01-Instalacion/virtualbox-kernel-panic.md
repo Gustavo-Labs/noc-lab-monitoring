@@ -22,8 +22,6 @@ VFS: unable to mount root fs on unknown-block(0,0)
 
 ![img](../01-Instalacion/images/kernel-panic.png)
 
-![alt text](../01-Instalacion/images/kernel-panic.png)
-
 ### 📌 Procedimiento seguro al detectar Kernel Panic
 
 1. Cuando aparece el **error kernel panic**, presiona el botón de apagar y luego vuelve a presionarlo para encender.  
