@@ -20,7 +20,7 @@ Al reiniciar el sistema con kernels incompatibles se presentaba:
 Kernel panic!
 VFS: unable to mount root fs on unknown-block(0,0)
 
-![img](../01-Instalacion/images/kernel-panic.png)
+![Kernel Panic](./images/kernel-panic.png)
 
 ### 📌 Procedimiento seguro al detectar Kernel Panic
 
@@ -41,7 +41,7 @@ Causas identificadas:
 
 ## 5 Solución aplicada
 
-### 🔹 5.1 Verificación de kernels
+## 5.1 Verificación de kernels
 
 Iniciar la terminal de Linux y digitar los siguientes comandos:
 
@@ -52,7 +52,7 @@ dpkg --list | egrep 'linux-image|linux-headers'   # Lista kernels y headers
  
 ```
 
-### 🔹 5.2 Eliminación de kernels problemáticos
+## 5.2 Eliminación de kernels problemáticos
 
 - Verificación de kernels
 - Eliminación de kernels conflictivos
@@ -74,7 +74,7 @@ linux-hwe-6.17-headers-6.17.0-14      # Eliminación completa de paquetes del ke
 
 ```
 
-### 🔹 5.3 Limpieza del sistema
+## 5.3 Limpieza del sistema
 
 ```.
 sudo apt autoremove                    # Elimina paquetes innecesarios
@@ -83,7 +83,7 @@ sudo apt autoclean                     # Limpia cache de paquetes
 
 ```
 
-### 🔹 5.4 Actualización del arranque
+## 5.4 Actualización del arranque
 
 ```.
 sudo update-grub                       # Actualiza menú de arranque
@@ -91,14 +91,14 @@ update-initramfs -u -k all             # Reconstruye initramfs
 
 ```
 
-### 🔹 5.5 Reinicio del sistema
+## 5.5 Reinicio del sistema
 
 ```.
 sudo reboot                            # Reinicia el sistema
 
 ```
 
-### 🔹 5.6 Instalación de VirtualBox
+## 5.6 Instalación de VirtualBox
 
 ```.
 sudo apt update                         # Actualiza lista de paquetes
@@ -111,7 +111,7 @@ sudo usermod -aG vboxusers $USER        # Agrega usuario al grupo VirtualBox
 
 ```
 
-### 🔹 5.7 Validación de instalación
+## 5.7 Validación de instalación
 
 ```.
 virtualbox --help                       # Verifica instalación
@@ -123,7 +123,7 @@ VBoxManage list hostinfo                 # Muestra información del host
 
 ```
 
-### 🔹 5.8 Troubleshooting VirtualBox
+### 5.8 Troubleshooting VirtualBox
 
 ```.
 sudo modprobe vboxdrv                  # Carga módulo de VirtualBox manualmente
@@ -166,13 +166,17 @@ sudo modprobe -r kvm                   # Desactiva KVM
 
 ```
 
-## 7 Evidencia
+## 8 Evidencia
 
-Kernel panic solucionado:
+### 📸 Kernel Panic antes de la solución
 
-VirtualBox funcionando:
+![Kernel Panic](./images/kernel-panic.png)
 
-## 8 Conclusión
+### 📸 VirtualBox funcionando después de la solución
+
+![VirtualBox funcionando](./images/virtualbox-ok.png)
+
+## 9 Conclusión
 
 - Sistema estable
 - VirtualBox funcionando
