@@ -180,8 +180,11 @@ lsmod | grep -E 'kvm|virt'  # Muestra los módulos KVM cargados
 
 ### 7.2 Desactivar KVM temporalmente (si VirtualBox falla)
 
+```bash
 sudo modprobe -r kvm_amd   # Desactiva KVM en CPUs AMD
 sudo modprobe -r kvm       # Desactiva módulo de virtualización KVM
+
+```
 
    ![KVM desactivado](./images/kvm-disabled.png)
 
