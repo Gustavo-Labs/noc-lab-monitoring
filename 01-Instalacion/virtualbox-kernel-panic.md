@@ -22,7 +22,8 @@ VFS: unable to mount root fs on unknown-block(0,0)
 
    ![Kernel Panic](./images/kernel-panic.png)
 
-   > Nota: Imagen recreada con fines educativos basada en entorno real de laboratorio.
+**Nota:** Imagen recreada con fines educativos basada en entorno real de laboratorio.
+> Nota: Imagen recreada con fines educativos basada en entorno real de laboratorio.
 
 ### 📌 Procedimiento seguro al detectar Kernel Panic
 
@@ -37,8 +38,11 @@ VFS: unable to mount root fs on unknown-block(0,0)
 
    ![Grub Kernel Selection ](./images/grub-kernel-selection.png)
 
-   ⚠️ **Importante:** No iniciar con los kernels 6.14 o 6.17.  
-4. Una vez iniciado con kernel estable, se pueden eliminar los kernels conflictivos (6.14 y 6.17).
+⚠️ **Importante:** No iniciar con los kernels 6.14 o 6.17.  
+
+   > ⚠️ **Importante:** No iniciar con los kernels 6.14 o 6.17.  
+
+4.Una vez iniciado con kernel estable, se pueden eliminar los kernels conflictivos (6.14 y 6.17).
 
 ## 4 Análisis del problema
 
