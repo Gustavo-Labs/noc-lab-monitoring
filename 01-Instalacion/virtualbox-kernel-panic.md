@@ -20,7 +20,7 @@ Al reiniciar el sistema con kernels incompatibles se presentaba:
 Kernel panic!
 VFS: unable to mount root fs on unknown-block(0,0)
 
-   ![Kernel Panic](./images/kernel-panic.png)
+   ![Kernel Panic](/assets/kernel-panic.png)
 
 > **Nota:** Imagen recreada con fines educativos basada en entorno real de laboratorio.
 
@@ -196,11 +196,11 @@ sudo modprobe -r kvm       # Desactiva módulo de virtualización KVM
 
 ### 📸 Kernel Panic antes de la solución
 
-   ![Kernel Panic](./images/kernel-panic.png)
+   ![Kernel Panic](/assets/kernel-panic.png)
 
 ### 📸 VirtualBox funcionando después de la solución
 
-   ![VirtualBox funcionando](./images/virtualbox-ok.png)
+   ![VirtualBox funcionando](/assets/virtualbox-ok.png)
 
 ## 9 Conclusiones
 
