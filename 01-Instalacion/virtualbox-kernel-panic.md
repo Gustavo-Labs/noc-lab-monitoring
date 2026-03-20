@@ -30,22 +30,19 @@ Nota_gris: Imagen recreada con fines educativos basada en entorno real de labora
 
 ### 📌 Procedimiento seguro al detectar Kernel Panic
 
-   1.Cuando aparece el **error kernel panic**, presiona el botón de apagar y luego vuelve a presionarlo para encender.  
-   2.Durante el arranque, entra al **menú avanzado (Advanced Options for Linux Mint)**.  
+  1. Cuando aparece el **error kernel panic**, presiona el botón de apagar y luego vuelve a encender.
+
+  2. Durante el arranque, entra al **menú avanzado (Advanced Options for Linux Mint)**.
 
    ![Grub Kernel](./images/grub-kernel.png)
 
-> Nota_gris: Imagen recreada con fines educativos basada en entorno real de laboratorio.
-`Nota_bloque: Imagen recreada con fines educativos basada en entorno real de laboratorio.`
-*Nota_morada: Imagen recreada con fines educativos basada en entorno real de laboratorio.*
+   **Nota:** Imagen recreada con fines educativos basada en entorno real de laboratorio.
+  3. Selecciona el kernel **6.8.0-106-generic (LTS)** para iniciar el sistema.
 
-   3.Selecciona el kernel **6.8.0-106-generic (LTS)** para iniciar el sistema.  
+   ![Grub Kernel Selection](./images/grub-kernel-selection.png)
 
-   ![Grub Kernel Selection ](./images/grub-kernel-selection.png)
-
-⚠️ **Importante:** No iniciar con los kernels 6.14 o 6.17.  
-
-   4.Una vez iniciado con kernel estable, se pueden eliminar los kernels conflictivos (6.14 y 6.17).
+   ⚠️ **Importante:** No iniciar con los kernels 6.14 o 6.17.
+  4. Una vez iniciado con kernel estable, se pueden eliminar los kernels conflictivos (6.14 y 6.17).
 
 ## 4 Análisis del problema
 
