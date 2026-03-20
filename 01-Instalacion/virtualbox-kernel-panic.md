@@ -26,16 +26,20 @@ VFS: unable to mount root fs on unknown-block(0,0)
 
 > Nota_gris: Imagen recreada con fines educativos basada en entorno real de laboratorio.
 
+Nota_gris: Imagen recreada con fines educativos basada en entorno real de laboratorio.
+
 ### 📌 Procedimiento seguro al detectar Kernel Panic
 
-1.Cuando aparece el **error kernel panic**, presiona el botón de apagar y luego vuelve a presionarlo para encender.  
-2.Durante el arranque, entra al **menú avanzado (Advanced Options for Linux Mint)**.  
+   1.Cuando aparece el **error kernel panic**, presiona el botón de apagar y luego vuelve a presionarlo para encender.  
+   2.Durante el arranque, entra al **menú avanzado (Advanced Options for Linux Mint)**.  
 
    ![Grub Kernel](./images/grub-kernel.png)
 
 ⚠ **Nota:** Imagen recreada con fines educativos basada en entorno real de laboratorio.
 
-3.Selecciona el kernel **6.8.0-106-generic (LTS)** para iniciar el sistema.  
+   *Nota: Imagen recreada con fines educativos basada en entorno real de laboratorio.*
+
+   3.Selecciona el kernel **6.8.0-106-generic (LTS)** para iniciar el sistema.  
 
    ![Grub Kernel Selection ](./images/grub-kernel-selection.png)
 
@@ -43,7 +47,7 @@ VFS: unable to mount root fs on unknown-block(0,0)
 
 ⚠ **Nota:** ⚠️ **Importante:** No iniciar con los kernels 6.14 o 6.17.
 
-4.Una vez iniciado con kernel estable, se pueden eliminar los kernels conflictivos (6.14 y 6.17).
+   4.Una vez iniciado con kernel estable, se pueden eliminar los kernels conflictivos (6.14 y 6.17).
 
 ## 4 Análisis del problema
 
