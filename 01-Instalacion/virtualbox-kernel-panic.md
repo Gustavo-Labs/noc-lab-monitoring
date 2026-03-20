@@ -31,15 +31,13 @@ VFS: unable to mount root fs on unknown-block(0,0)
 
    ![Grub Kernel](./images/grub-kernel.png)
 
-   > Nota: Imagen recreada con fines educativos basada en entorno real de laboratorio.
+   **Nota:** Imagen recreada con fines educativos basada en entorno real de laboratorio.
 
 3. Selecciona el kernel **6.8.0-106-generic (LTS)** para iniciar el sistema.  
 
    ![Grub Kernel Selection ](./images/grub-kernel-selection.png)
 
-   > ⚠️ No iniciar con los kernels 6.14 o 6.17.  
-   > Nota: Imagen recreada con fines educativos basada en entorno real de laboratorio.
-
+   ⚠️ **Importante:** No iniciar con los kernels 6.14 o 6.17.  
 4. Una vez iniciado con kernel estable, se pueden eliminar los kernels conflictivos (6.14 y 6.17).
 
 ## 4 Análisis del problema
@@ -151,19 +149,13 @@ sudo dpkg --configure -a                  # Reconfigura paquetes dañados
 
 Para que las capturas no muestren tu nombre real, solo ejecuta en la terminal de linux:
 
-```.
-export PS1="nocadmin@noc-lab:\w$ "
-
-```
+   > export PS1="nocadmin@noc-lab:\w$"
 
 Esto cambia solo la terminal actual.
 
 Al cerrar la terminal, volverá automáticamente a:
 
-```.
-usuario@nombre_del_equipo:~$_
-
-```
+   > usuario@nombre_del_equipo:~$_
 
 💡 Ventaja: sencillo, seguro y no requiere scripts extra.
 
@@ -193,7 +185,7 @@ sudo modprobe -r kvm       # Desactiva módulo de virtualización KVM
 
    *Después de ejecutar `modprobe -r kvm_amd` y `modprobe -r kvm`, KVM queda desactivado temporalmente*
 
-⚠ Nota: Esto solo se hace si VirtualBox no inicia correctamente. Para volver a activar KVM, reinicia el sistema.
+⚠ **Nota:** Esto solo se hace si VirtualBox no inicia correctamente. Para volver a activar KVM, reinicia el sistema.
 
 ## 8 Evidencia
 
