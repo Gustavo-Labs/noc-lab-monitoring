@@ -61,7 +61,7 @@ Causas identificadas:
 
 Iniciar la terminal de Linux y digitar los siguientes comandos:
 
-```.
+```
 dpkg --list | grep linux-image                     # Lista todos los kernels instalados
 dpkg -l | grep 6.17                                # Busca kernel 6.17 instalado
 dpkg --list | egrep 'linux-image|linux-headers'    # Lista kernels y headers
@@ -76,7 +76,7 @@ dpkg --list | egrep 'linux-image|linux-headers'    # Lista kernels y headers
 - Reconfiguración de DKMS
 - Validación de módulos
 
-```.
+```
 
 sudo apt purge linux-image-6.17* linux-headers-6.17*        # Elimina kernel 6.17
 sudo apt purge linux-image-*-6.14* linux-headers-*-6.14*    # Elimina kernel 6.14
@@ -92,7 +92,7 @@ linux-hwe-6.17-headers-6.17.0-14                            # Eliminación compl
 
 ### 5.3 Limpieza del sistema
 
-```.
+```
 sudo apt autoremove                    # Elimina paquetes innecesarios
 sudo apt autoremove --purge -y         # Limpieza completa
 sudo apt autoclean                     # Limpia cache de paquetes
@@ -101,7 +101,7 @@ sudo apt autoclean                     # Limpia cache de paquetes
 
 ### 5.4 Actualización del arranque
 
-```.
+```
 sudo update-grub                       # Actualiza menú de arranque
 update-initramfs -u -k all             # Reconstruye initramfs
 
@@ -109,14 +109,14 @@ update-initramfs -u -k all             # Reconstruye initramfs
 
 ### 5.5 Reinicio del sistema
 
-```.
+```
 sudo reboot                            # Reinicia el sistema
 
 ```
 
 ### 5.6 Instalación de VirtualBox
 
-```.
+```
 sudo apt update                                                   # Actualiza lista de paquetes
 sudo apt upgrade                                                  # Actualiza paquetes instalados
 sudo apt install build-essential dkms linux-headers-$(uname -r)   # Instala dependencias
