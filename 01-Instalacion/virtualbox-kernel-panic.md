@@ -33,7 +33,7 @@ VFS: unable to mount root fs on unknown-block(0,0)
 
    ![Grub Kernel](./images/grub-kernel.png)
 
-   **Nota:** Imagen recreada con fines educativos basada en entorno real de laboratorio.
+⚠ **Nota:** Imagen recreada con fines educativos basada en entorno real de laboratorio.
 
 3. Selecciona el kernel **6.8.0-106-generic (LTS)** para iniciar el sistema.  
 
@@ -41,7 +41,7 @@ VFS: unable to mount root fs on unknown-block(0,0)
 
 ⚠️ **Importante:** No iniciar con los kernels 6.14 o 6.17.  
 
- <!-- > ⚠️ **Importante:** No iniciar con los kernels 6.14 o 6.17.  -->
+⚠ **Nota:** ⚠️ **Importante:** No iniciar con los kernels 6.14 o 6.17.
 
 4.Una vez iniciado con kernel estable, se pueden eliminar los kernels conflictivos (6.14 y 6.17).
 
