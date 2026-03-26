@@ -19,6 +19,7 @@ Simular un entorno NOC real con monitoreo, alertas y resolución de incidentes.
 
 ## Documentación destacada
 
+[Instalación de VirtualBox en Linux Mint](./01-Instalacion/virtualbox-install.md)
 [Kernel Panic + VirtualBox](./05-Incidentes/virtualbox-kernel-panic.md)
 
 ## Tecnologías
@@ -35,3 +36,5 @@ En progreso (Laboratorio activo)
 ## Evidencia
 
 ![VirtualBox VM Noc Server](/assets/vbox-noc-server-creado.png)
+
+![zabbix-server-runnig](./assets/zabbix-server-runnig.png)
