@@ -67,6 +67,8 @@ Frontend Web (Zabbix)
 ↓  
 Grafana (visualización)
 
+<!-- markdownlint-disable MD033 -->
+
 <p align="left">
 <img src="./images/arquitectura-VM.png" alt="Arquitectura de laboratorio" width="600">
 </p>
