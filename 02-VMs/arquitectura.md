@@ -67,7 +67,7 @@ Frontend Web (Zabbix)
 ↓  
 Grafana (visualización)
 
-![Arquitectura de las VM](images/arquitectura-VM.png)
+![Arquitectura de las VM](images/arquitectura-VM.png){:width="50%"}
 
 ---  
   
