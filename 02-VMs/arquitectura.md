@@ -67,7 +67,9 @@ Frontend Web (Zabbix)
 ↓  
 Grafana (visualización)
 
-![Arquitectura de las VM](images/arquitectura-VM.png){:width="50%"}
+<p align="center">
+    <img src="./images/arquitectura-VM.png" alt="Arquitectura de laboratorio" width="800">
+</p>
 
 ---  
   
