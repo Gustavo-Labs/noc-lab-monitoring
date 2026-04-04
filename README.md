@@ -1,5 +1,10 @@
 # 🖥️ NOC Lab Monitoring
 
+![Linux](https://img.shields.io/badge/Linux-Mint_22.2-green)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-7.0.16-blue)
+![Zabbix](https://img.shields.io/badge/Zabbix-Monitoring-red)
+![Grafana](https://img.shields.io/badge/Grafana-Dashboard-orange)
+
 Laboratorio práctico de monitoreo y troubleshooting orientado a simular un entorno real de Network Operations Center (NOC).
 
 ## 🎯 Objetivo
@@ -18,7 +23,7 @@ Diseñar e implementar un entorno de monitoreo capaz de:
 * 1 VM Cliente Windows (LTSC)
 * Red en modo Bridge
   
-## Tecnologías principales:
+## Tecnologías principales
 
 * [Oracle VirtualBox](https://download.virtualbox.org/virtualbox/7.0.16/)
 * [Zabbix](https://www.zabbix.com/la/)
